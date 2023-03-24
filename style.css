@@ -1,17 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Fira+Sans:wght@100;200;300;400;500;600;700&display=swap");
+/* #################################################################### */
+/* ########################## FONTS FORM GOOGLE ####################### */
+/* #################################################################### */
+
 @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;400;500;600;700;800;900&family=Fira+Sans:wght@100;200;300;400;500;600;700&display=swap");
 
+
+/* ################## CHANGE SELECTION BACKGROUND WHEN SELECT TEXT ################## */
 ::selection {
   background-color: #26c6da;
   color: white;
 }
 
+
 body {
   background-color: #eee;
 }
 
+
+/* #################################################################### */
+/* ########################### NAVBAR STYLING ######################### */
+/* #################################################################### */
+
+
 .navbar {
-  /* background-color: rgba(255, 255, 255, 0.641); */
   backdrop-filter: blur(4px);
   z-index: 1000 !important;
 }
@@ -23,12 +34,67 @@ body {
 .navbar-nav {
   padding-right: 0 !important;
 }
+
 .nav-link {
   color: #222 !important;
 }
 .nav-link:hover {
   color: #646464 !important;
 }
+
+
+/* #################################################################### */
+/* ########################## BOOTSTRAP CLASSES ####################### */
+/* #################################################################### */
+
+
+#carouselExampleCaptions {
+  margin-top: 7rem !important;
+}
+#carouselExampleCaptions button {
+  color: #333;
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  left: 50% !important;
+  transform: translate(-50%);
+  margin: auto !important;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+  text-align: center;
+}
+.carousel-item h2 {
+  font-size: 3.8rem !important;
+  background: #26c6da;
+  width: fit-content;
+  margin: auto;
+  width: 75px;
+  border-radius: 6rem;
+  color: white !important;
+  margin-bottom: 5px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  top: 50% !important;
+  background: none !important;
+}
+
+.carousel-caption {
+  position: relative;
+  top: 70% !important;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+
+/* #################################################################### */
+/* ############################ HERO SECTION ########################## */
+/* #################################################################### */
+
 
 .mainHeroSection {
   padding: 10rem 0 !important;
@@ -54,9 +120,7 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
-/* .mainHeroSection .time:hover {
-  background-color: #0074c16d;
-} */
+
 .mainHeroSection .time span {
   color: #fff !important;
 }
@@ -74,13 +138,11 @@ body {
   right: 0;
 }
 
-.features {
-  position: relative;
-  z-index: 1;
-  padding: 9rem 0 !important;
-  background-color: #ddd;
-  overflow: hidden;
-}
+
+/* #################################################################### */
+/* ################### SHAPES BEHAINED BACKGROUND ##################### */
+/* #################################################################### */
+
 
 .shape {
   position: absolute;
@@ -98,14 +160,6 @@ body {
     #00e1e9,
     #00e0ec
   );
-}
-
-.features .shape:nth-child(2) {
-  position: absolute;
-  right: 15%;
-  top: 50%;
-  bottom: -30% !important;
-  height: 260px;
 }
 
 .a {
@@ -136,10 +190,38 @@ button {
   font-weight: 800;
 }
 
+
+/* #################################################################### */
+/* ########################## FEATURES SECTION ######################## */
+/* #################################################################### */
+
+
+.features {
+  position: relative;
+  z-index: 1;
+  padding: 9rem 0 !important;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
 .features .all {
   position: relative;
   z-index: 10;
 }
+
+.features .shape:nth-child(2) {
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  bottom: -30% !important;
+  height: 260px;
+}
+
+
+/* #################################################################### */
+/* ############################ STYLING BOXES ######################### */
+/* #################################################################### */
+
 
 .box {
   cursor: pointer;
@@ -201,6 +283,12 @@ button {
   box-shadow: none !important;
 }
 
+
+/* #################################################################### */
+/* ######################### DOWN ARROW IN HERO ####################### */
+/* #################################################################### */
+
+
 .down {
   display: none;
 }
@@ -210,26 +298,11 @@ button {
   color: #979797;
 }
 
-.about {
-  background: #b3e1f7;
-  border-radius: 1rem;
-}
 
-.about .col p {
-  font-size: 1.1rem !important;
-}
-.about .discri p {
-  font-size: 0.9rem !important;
-  color: #646464;
-}
-.about i {
-  font-size: 1.4rem !important;
-}
+/* #################################################################### */
+/* ########################### PROJECT SECTION ######################## */
+/* #################################################################### */
 
-.mainAbout {
-  display: none;
-  padding: 4rem !important;
-}
 
 .projects {
   padding: 6rem 0 !important;
@@ -270,6 +343,12 @@ button {
   );
 }
 
+
+/* #################################################################### */
+/* ########################### CONTACT SECTION ######################## */
+/* #################################################################### */
+
+
 .contact {
   padding: 7rem 0 !important;
   position: relative;
@@ -286,13 +365,11 @@ button {
 }
 .contact input,
 .contact textarea {
-  /* border: 2px solid #eee; */
   background: #eeeeee97 !important;
   border: none;
 }
 
 .contact .shape {
-  /* bottom: 0; */
   left: 30%;
   top: 10%;
   width: 700px;
@@ -303,67 +380,21 @@ button {
   box-shadow: none;
 }
 
+
+/* #################################################################### */
+/* ########################### QUOTES SECTION ######################### */
+/* #################################################################### */
+
+
 .quotes {
   background-color: #ddd;
   padding: 6rem 0 !important;
 }
 
-#carouselExampleCaptions {
-  margin-top: 7rem !important;
-}
-#carouselExampleCaptions button {
-  color: #333;
-  /* background: none !important; */
-}
 
-.carousel-item {
-  position: relative;
-  display: none;
-  left: 50% !important;
-  transform: translate(-50%);
-  margin: auto !important;
-  backface-visibility: hidden;
-  transition: transform 0.6s ease-in-out;
-  text-align: center;
-}
-.carousel-item h2 {
-  font-size: 3.8rem !important;
-  background: #26c6da;
-  width: fit-content;
-  margin: auto;
-  width: 75px;
-  border-radius: 6rem;
-  color: white !important;
-  margin-bottom: 5px;
-}
-.carousel img {
-  max-width: 100%;
-  width: 200px !important;
-  display: block;
-  margin: auto;
-  margin-bottom: 5rem;
-  border-radius: 50rem;
-  border: 5px solid #00e1e9;
-  /* display: none !important; */
-}
-
-/* .carousel-indicators {
-  top: 10rem;
-} */
-
-.carousel-control-next,
-.carousel-control-prev {
-  top: 50% !important;
-  background: none !important;
-}
-
-.carousel-caption {
-  position: relative;
-  top: 70% !important;
-  text-align: center;
-  left: 0;
-  right: 0;
-}
+/* #################################################################### */
+/* ########################### FOOTER SECTION ######################### */
+/* #################################################################### */
 
 
 .footer{
@@ -372,6 +403,11 @@ button {
 .footer img{
   width: 80px;
 }
+
+
+/* #################################################################### */
+/* ######################## ANIMATE DOWN ARROW ######################## */
+/* #################################################################### */
 
 
 @keyframes down {
@@ -386,6 +422,12 @@ button {
   }
 }
 
+/* #################################################################### */
+/* ##################### MEDIA QUERY FOR DEVICES ###################### */
+/* #################################################################### */
+
+
+/* MEDIUM - TABLET */
 @media (min-width: 992px) {
   .w-md-50 {
     width: 50% !important;
@@ -398,13 +440,14 @@ button {
   }
 }
 
+/* SMALL DEVICES */
 @media (max-width: 768px) {
   .down {
     display: block;
     display: block;
     position: absolute;
     left: 50%;
-    bottom: -15rem !important;
+    bottom: -8rem !important;
   }
   .title {
     width: 100% !important;
@@ -474,10 +517,11 @@ button {
     font-size: .8rem !important;
   }
   .footer img{
-    width: 50px;
+    width: 60px !important;
   }
 }
 
+/* EXTRA SMALL DEVICES */
 @media (max-width: 400px) {
   .about-content {
     display: flex;
@@ -498,6 +542,7 @@ button {
   }
 }
 
+/* DISABLE HOVER ON MOBILE DEVICES */
 @media (hover: none) {
   .box {
     pointer-events: none !important;
