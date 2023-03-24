@@ -31,6 +31,8 @@ document.getElementById("year").innerHTML = year;
 document.getElementById("day").innerHTML = days[day];
 document.getElementById("month").innerHTML = monthes[month];
 
+document.getElementById("footer_year").innerHTML = year;
+
 const navbar = document.querySelector(".navbar");
 let links = document.querySelectorAll(".nav-link");
 
