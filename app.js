@@ -51,3 +51,6 @@ window.onscroll = function () {
     // });
   }
 };
+
+new WOW().init();
+
